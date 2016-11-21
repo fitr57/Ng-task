@@ -1,0 +1,14 @@
+<section>
+	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Non serve ma è bello">
+	<h1>
+	   {{cat|uppercase}} 
+	   <span style="zoom:75%" class="pull-right">
+		<button ng-click="create()" class="btn btn-success" accesskey="n"><i class="fa fa-file-o"></i></button>
+		<button ng-click="remove()" class="btn btn-danger"  accesskey="x"><i class="fa fa-trash-o"></i></button>
+		<button id='toggleFiltering' ng-click="toggleFiltering()" class="btn btn-success"><i class="fa fa-hand-lizard-o" aria-hidden="true">   Filtra</i></button>
+	   </span>
+	</h1>
+	<div ui-grid="gridOptions" class="grd" ui-grid-edit ui-grid-cellNav ui-grid-row-edit ui-grid-selection></div>
+	
+</section>
+

@@ -1,1 +1,2 @@
-# Ng-task
+# ngskel
+AngularJs skeleton
